@@ -1,0 +1,6 @@
+这是我在宁皓网学习docker时顺手总结下来的关于docker的笔记，希望愿意和我一起学习docker的朋友能有帮助，也希望能对我的笔记提出宝贵的意见和建议，谢谢
+这个学习笔记里面更多的是docker学习的命令，以docker的一般功能和特色功能被分成五个区块，分别是：
+docker的基本操作
+dockerfile的使用
+docker-compose的使用
+docker swarm的使用
