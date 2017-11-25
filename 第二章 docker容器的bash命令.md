@@ -57,12 +57,11 @@
 13．查看docker的网络  
 -----    
 `docker network ls `
-host //和主机一样的网络，能够访问到主机就可以访问到host   
-`docker run -d --name 【被创建的容器名】 -net`   
-host【镜像名】 //创建容器并指定host端口  
-none //完全隔离   
+>host //和主机一样的网络，能够访问到主机就可以访问到host   
+`docker run -d --name 【被创建的容器名】 -net host【镜像名】` //创建容器并指定host端口  
+>none //完全隔离   
 `docker run -d --name 【被创建的容器名】 -net none【镜像名】` //创建容器并指定none端口  
-briage: //桥接网络(默认属性:容器和主机的一座桥。可以被指定端口)   
+>briage: //桥接网络(默认属性:容器和主机的一座桥。可以被指定端口)   
 `docker run -d --name 【被创建的容器名】 【镜像名】` //创建容器并指定briage端口   
 
 14．检查docker容器的网络  
