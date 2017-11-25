@@ -1,22 +1,23 @@
 第三章 docekrfile 制作镜像    
 ========    
   
-1. 关于dockerfile的名称  
-------     
-创建一个文本文件名称无限制，在其内部编写  
+1.关于dockerfile的名称    
+----------     
+
+创建一个文本文件名称无限制，在其内部编写    
   
-2. dockerfile的内容格式和语法  
+2.dockerfile的内容格式和语法  
 -------     
 `FROM 【镜像名】`    
 `MAINTAINER 【作者名】【<邮箱>】`    
 `RUN 【命令】`    
 `COPY 【本地配置文件相对路径】【镜像中的配置文件绝对路径】`  
   
-3. dockerfile的执行命令  
+3.dockerfile的执行命令  
 ----    
 `docker build --tag 【作者名】/【原镜像名】：【版本：如latest】【位置：如.】`    
   
-4. Docker的aliyun仓库的使用  
+4.Docker的aliyun仓库的使用  
 ----    
 从registry中拉取镜像：  
 `$ sudo docker pull registry.cn-beijing.aliyuncs.com/georgeli/drupal:[镜像版本号]`  
@@ -25,7 +26,7 @@
 `$ sudo docker tag [ImageId] registry.cn-beijing.aliyuncs.com/【作者】/【项目名】:[镜像版本号]`  
 `$ sudo docker push registry.cn-beijing.aliyuncs.com/georgeli/drupal:[镜像版本号]`  
   
-5. sample:  
+5.sample:  
 ------     
 使用docker tag重命名镜像，并将它通过私网ip推送至registry：  
 `$ sudo docker images`  
