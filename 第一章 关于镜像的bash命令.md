@@ -1,17 +1,17 @@
-第一章 关于镜像的bash命令
+第一章 关于镜像的bash命令  
 ====  
-**1．搜索镜像**
+**1．搜索镜像**  
 -------  
-`docker run 【镜像名】`
-**2．查看已有镜像**
+`docker run 【镜像名】`  
+**2．查看已有镜像**  
 -------  
-`docker images`
+`docker images`  
 **3．下载镜像**  
 -------  
-`docker pull 【镜像名】`
-**4．删除主机镜像**
+`docker pull 【镜像名】`  
+**4．删除主机镜像**  
 -------  
-`docker rmi 【镜像名】`
+`docker rmi 【镜像名】`  
 **5．查看文件镜像属性**  
 -------  
-`docker inspect 【镜像名】`
+`docker inspect 【镜像名】`  
