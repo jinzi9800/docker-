@@ -5,18 +5,26 @@
 `docker run【镜像名】`
 **2．docker run的参数**
 ------------------
+<<<<<<< HEAD
 `--name【被命名的容器名】`    // 命名容器
 `-i`     //让容器变成带交互的（全写就是--interactive）
 `-t`     // 指定了编辑器（--tty），后面一般跟随/bin/bash
 `-d`     // 让容器在后台运行 （--dettach）
 **3．查看容器**
+=======
+`--name【被命名的容器名】`    // 命名容器  
+`-i`     //让容器变成带交互的（全写就是--interactive）  
+`-t`     // 指定了编辑器（--tty），后面一般跟随/bin/bash  
+`-d`     // 让容器在后台运行 （--dettach）  
+**3．查看容器**  
+>>>>>>> bbbc02dcae99be50d09ce75dd5bf217ec8d574db
 --------------
-`docker ps -all`
+`docker ps -all`  
 **4．删除容器**
 --------------
-`docker rm`
-`-v`  // 连数据盘和容器一起删除**
-`docker rm -v 【容器名】`
+`docker rm`  
+`-v`  // 连数据盘和容器一起删除**  
+`docker rm -v 【容器名】`  
 **5．查看容器的日志**
 --------------
 `docker logs 【容器名or ID】`
