@@ -3,6 +3,7 @@
 1.镜像的命名  
 ----------    
 文档的编写文件名必须是docker-compose.yml  
+
 2.dockercompose文件的细节  
 ----------     
 version ’2’ #至少是2  
@@ -13,6 +14,7 @@ services：【服务名】
     context:【定制镜像的dockerfile文件路径】  
     dockerfile：【dockerfile的文件名】`  
   //以上image和build都是创建镜像的办法，#不需要一起二选一即可。  
+<<<<<<< HEAD:第四章 docker-compose 组装镜像.md
       `environment:【在docker仓库里面看该镜像的注解，可以找到能够配置的环境变量】`  
       `ports：-"【主机端口】:【容器端口】`  
       `depend_on:-【依赖的服务名】`  
@@ -25,29 +27,54 @@ services：【服务名】
       `volumes:【数据卷名】`  
       `driver: 【数据卷类型/local/telent?】`  
 3.执行命令docker-compse up  
+=======
+      `environment:【在docker仓库里面看该镜像的注解，可以找到能够配置的环境变量】  
+      ports：-"【主机端口】:【容器端口】  
+      depend_on:-【依赖的服务名】  
+      volulme_from:-【继承数据卷的服务名】  
+      network:- "【网络名】"  
+      volumes:-【数据卷名】:【数据卷在服务容器上面被指定的位置】  
+              - 【数据卷在主机当中的位置】:【数据卷将被挂载到的镜像中的位置】  
+      network：【网络名】：  
+      driver：【网络类型/bridge/host/none】  
+      volumes:【数据卷名】  
+      driver: 【数据卷类型/local/telent?】`  
+      
+3.执行组装命令
+>>>>>>> 14af014c8834a60b15fedf297820a5db4a4082c1:第四章 docker-compose 组装镜像.md
 -------------    
+`docker-compse up`  
 `-d`：后台运行  
+
 4.查看docker-compose的服务   
 -------    
 `docker-compose up`  
+
 5.停止docker-compose的服务   
 -------    
 `docker-compose stop 【镜像名/（不加任何：停止全部）】`  
+
 6.启动docker-compose的服务：   
 -------    
 `docker-compose start 【镜像名/（不加任何：启动全部）】`  
+
 7.持续查看docker-compose的服务的日志   
 -------    
 `docker-compose logs -f`  
+
 8.登陆docker-compose的某一个镜像的服务   
 -------    
 `docker-compose exec 【镜像名】bash`  
+
 9.删除docker-compose的服务（不包括数据卷和网络端口）   
 -------    
 `docker-compose rm 【镜像名/（不加任何：启动全部）】`  
+
 10.删除docker-compose的服务（包括数据卷和网络端口）   
 -------    
 `docker-compose down 【镜像名/（不加任何：启动全部）】`  
+
 11.定制docker-compose镜像的服务   
 -------    
 `docker-compose build 【定制镜像脚本路径】`  
+
