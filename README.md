@@ -8,7 +8,7 @@
 ==========
 [0. 安装docker.md](https://github.com/jinzi9800/docker-tips/blob/master/0.%20%E5%AE%89%E8%A3%85docker.md "0. 安装docker.md")  //搬运工安装有弯路，看好再走  
 
-`1. 关于镜像的bash命令.md`  //用bash接触一下docker先  
+1. 关于镜像的bash命令.md  //用bash接触一下docker先  
 
 `2. docker容器的bash命令.md`  //容器和镜像是两个概念，所以分成两个章节，希望能够引起你的重视  
 
