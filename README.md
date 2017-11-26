@@ -6,7 +6,7 @@
 
 这个项目的地图是这样的：  
 ==========
-`0. 安装docker.md`  //搬运工安装有弯路，看好再走  
+(https://github.com/jinzi9800/docker-tips/blob/master/0.%20%E5%AE%89%E8%A3%85docker.md "0. 安装docker.md")  //搬运工安装有弯路，看好再走  
 
 `1. 关于镜像的bash命令.md`  //用bash接触一下docker先  
 
