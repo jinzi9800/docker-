@@ -3,6 +3,7 @@
 1.镜像的命名  
 ----------    
 文档的编写文件名必须是docker-compose.yml  
+
 2.dockercompose文件的细节  
 ----------     
 version ’2’ #至少是2  
@@ -24,30 +25,41 @@ services：【服务名】
       driver：【网络类型/bridge/host/none】  
       volumes:【数据卷名】  
       driver: 【数据卷类型/local/telent?】`  
-3.执行命令docker-compse up  
+      
+3.执行组装命令
 -------------    
+`docker-compse up`  
 `-d`：后台运行  
+
 4.查看docker-compose的服务   
 -------    
 `docker-compose up`  
+
 5.停止docker-compose的服务   
 -------    
 `docker-compose stop 【镜像名/（不加任何：停止全部）】`  
+
 6.启动docker-compose的服务：   
 -------    
 `docker-compose start 【镜像名/（不加任何：启动全部）】`  
+
 7.持续查看docker-compose的服务的日志   
 -------    
 `docker-compose logs -f`  
+
 8.登陆docker-compose的某一个镜像的服务   
 -------    
 `docker-compose exec 【镜像名】bash`  
+
 9.删除docker-compose的服务（不包括数据卷和网络端口）   
 -------    
 `docker-compose rm 【镜像名/（不加任何：启动全部）】`  
+
 10.删除docker-compose的服务（包括数据卷和网络端口）   
 -------    
 `docker-compose down 【镜像名/（不加任何：启动全部）】`  
+
 11.定制docker-compose镜像的服务   
 -------    
 `docker-compose build 【定制镜像脚本路径】`  
+
