@@ -13,17 +13,17 @@ services：【服务名】
     context:【定制镜像的dockerfile文件路径】  
     dockerfile：【dockerfile的文件名】`  
   //以上image和build都是创建镜像的办法，#不需要一起二选一即可。  
-      `environment:【在docker仓库里面看该镜像的注解，可以找到能够配置的环境变量】  
-      ports：-"【主机端口】:【容器端口】  
-      depend_on:-【依赖的服务名】  
-      volulme_from:-【继承数据卷的服务名】  
-      network:- "【网络名】"  
-      volumes:-【数据卷名】:【数据卷在服务容器上面被指定的位置】  
-              - 【数据卷在主机当中的位置】:【数据卷将被挂载到的镜像中的位置】  
-      network：【网络名】：  
-      driver：【网络类型/bridge/host/none】  
-      volumes:【数据卷名】  
-      driver: 【数据卷类型/local/telent?】`  
+      `environment:【在docker仓库里面看该镜像的注解，可以找到能够配置的环境变量】`  
+      `ports：-"【主机端口】:【容器端口】`  
+      `depend_on:-【依赖的服务名】`  
+      `volulme_from:-【继承数据卷的服务名】`  
+      `network:- "【网络名】"`  
+      `volumes:-【数据卷名】:【数据卷在服务容器上面被指定的位置】`  
+              `- 【数据卷在主机当中的位置】:【数据卷将被挂载到的镜像中的位置】`  
+      `network：【网络名】：`  
+      `driver：【网络类型/bridge/host/none】`  
+      `volumes:【数据卷名】`  
+      `driver: 【数据卷类型/local/telent?】`  
 3.执行命令docker-compse up  
 -------------    
 `-d`：后台运行  
